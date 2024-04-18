@@ -404,15 +404,15 @@ async def cb_handler(client: Client, query: CallbackQuery):
         await query.answer()
     elif query.data == "start":
         buttons = [[
-            InlineKeyboardButton('➕ Add Me To Your Groups ➕', url=f'http://t.me/{temp.U_NAME}?startgroup=true')
+            InlineKeyboardButton('Subscribe', url='https://www.youtube.com/')
         ], [
             InlineKeyboardButton('👥 DEVS', url='https://t.me/Ak_Bot_SupportGroup'),
             InlineKeyboardButton('😊 About', callback_data='about')
         ], [
-            InlineKeyboardButton('😑 YOUTUBE', url='https://youtube.com/c/MADpsychoYT'),
+            InlineKeyboardButton('😑 YOUTUBE', url='https://youtube.com/'),
             InlineKeyboardButton('ℹ️ Help', callback_data='help')
         ], [
-            InlineKeyboardButton('❤️ Sᴏᴜʀᴄᴇ', url='https://github.com/Akbotmakersnew/LUCIFER')
+            InlineKeyboardButton('❤️ Sᴏᴜʀᴄᴇ', url='https://github.com/')
         ]]
         reply_markup = InlineKeyboardMarkup(buttons)
         await query.message.edit_text(
