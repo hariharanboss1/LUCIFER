@@ -31,8 +31,7 @@ class Bot(Client):
             bot_token=BOT_TOKEN,
             workers=50,
             plugins={"root": "plugins"},
-            sleep_threshold=5,
-        )
+            sleep_threshold=5,)
 
     async def start(self):
         b_users, b_chats = await db.get_banned()
@@ -101,5 +100,5 @@ class Bot(Client):
                 current += 1
 
 
-app = Bot()
+app = Bot('game')
 app.run()                
